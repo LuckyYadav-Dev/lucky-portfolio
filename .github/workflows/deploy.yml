@@ -10,17 +10,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-<<<<<<< HEAD
+
       - run: npm ci
-=======
+
       - run: npm install
->>>>>>> d36ae584e6352e22aae5c8b8d8231eb5e2ccee6e
+
       - run: npm run build
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-<<<<<<< HEAD
+
           publish_dir: ./dist
-=======
-          publish_dir: ./dist
->>>>>>> d36ae584e6352e22aae5c8b8d8231eb5e2ccee6e
